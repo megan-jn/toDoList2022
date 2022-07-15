@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		449C21C228821DB7003215BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21C128821DB7003215BC /* AppDelegate.swift */; };
 		449C21C428821DB7003215BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21C328821DB7003215BC /* SceneDelegate.swift */; };
-		449C21C628821DB7003215BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21C528821DB7003215BC /* ViewController.swift */; };
 		449C21C928821DB7003215BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449C21C728821DB7003215BC /* Main.storyboard */; };
 		449C21CC28821DB7003215BC /* toDoList2022.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449C21CA28821DB7003215BC /* toDoList2022.xcdatamodeld */; };
 		449C21CE28821DBD003215BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449C21CD28821DBD003215BC /* Assets.xcassets */; };
@@ -17,6 +16,8 @@
 		449C21DC28821DBD003215BC /* toDoList2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21DB28821DBD003215BC /* toDoList2022Tests.swift */; };
 		449C21E628821DBD003215BC /* toDoList2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21E528821DBD003215BC /* toDoList2022UITests.swift */; };
 		449C21E828821DBD003215BC /* toDoList2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21E728821DBD003215BC /* toDoList2022UITestsLaunchTests.swift */; };
+		449C21F528822362003215BC /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21F428822362003215BC /* ToDoTableViewController.swift */; };
+		449C21F7288224FC003215BC /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C21F6288224FC003215BC /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		449C21BE28821DB7003215BC /* toDoList2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449C21C128821DB7003215BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449C21C328821DB7003215BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		449C21C528821DB7003215BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		449C21C828821DB7003215BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		449C21CB28821DB7003215BC /* toDoList2022.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDoList2022.xcdatamodel; sourceTree = "<group>"; };
 		449C21CD28821DBD003215BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		449C21E128821DBD003215BC /* toDoList2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toDoList2022UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		449C21E528821DBD003215BC /* toDoList2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoList2022UITests.swift; sourceTree = "<group>"; };
 		449C21E728821DBD003215BC /* toDoList2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoList2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		449C21F428822362003215BC /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		449C21F6288224FC003215BC /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 			children = (
 				449C21C128821DB7003215BC /* AppDelegate.swift */,
 				449C21C328821DB7003215BC /* SceneDelegate.swift */,
-				449C21C528821DB7003215BC /* ViewController.swift */,
 				449C21C728821DB7003215BC /* Main.storyboard */,
+				449C21F6288224FC003215BC /* ToDo.swift */,
+				449C21F428822362003215BC /* ToDoTableViewController.swift */,
 				449C21CD28821DBD003215BC /* Assets.xcassets */,
 				449C21CF28821DBD003215BC /* LaunchScreen.storyboard */,
 				449C21D228821DBD003215BC /* Info.plist */,
@@ -261,8 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449C21C628821DB7003215BC /* ViewController.swift in Sources */,
 				449C21CC28821DB7003215BC /* toDoList2022.xcdatamodeld in Sources */,
+				449C21F7288224FC003215BC /* ToDo.swift in Sources */,
+				449C21F528822362003215BC /* ToDoTableViewController.swift in Sources */,
 				449C21C228821DB7003215BC /* AppDelegate.swift in Sources */,
 				449C21C428821DB7003215BC /* SceneDelegate.swift in Sources */,
 			);
@@ -445,6 +449,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = toDoList2022/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = toDoList2022;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +477,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = toDoList2022/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = toDoList2022;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
